@@ -12,6 +12,32 @@ h1 {
   color: green;
 }
 
+.main {
+  padding: 20px;
+}
+.main .top .logo img {
+  width: 30%;
+  height: auto;
+}
+.main .mid .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .mid .items .avatar {
+  width: 100px;
+  height: auto;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .mid .items .qr {
+  width: 100px;
+  height: auto;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .main .bottom {
   background-color: #fff;
   border-radius: 5px;
