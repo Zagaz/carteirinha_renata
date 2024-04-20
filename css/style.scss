@@ -1,42 +1,145 @@
 $blue: #0426a9;
 $white: #fff;
 
+// mixin
+@mixin imageQuare() {
+  width: 80px;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-*{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-     background-color: $blue;
+body {
+  background-color: $blue;
 }
-h1{
-     color: green;
+
+.main {
+     margin : 10px 0;
+  padding: 20px;
+  .top {
+     padding: 20px;
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-end;
+     flex-wrap: nowrap;
+    .logo {
+      img {
+        width: 70px;
+        height: auto;
+      }
+    }
+    .validade{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+
+         h1{
+          color: $white;
+          font-size: 1.5rem;
+         }
+    }
+  }
+ 
+  .bottom {
+     .mid {
+          .items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      
+            .avatar {
+              @include imageQuare();
+            }
+            .qr {
+              @include imageQuare();
+            }
+          }
+        }
+    background-color: $white;
+    border-radius: 5px;
+    padding: 20px;
+    .user {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin : 10px 0;
+
+      .name {
+        // color: $blue;
+        font-weight: 500;
+        font-size: 0.8rem;
+      }
+    }
+    .class {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin : 10px 0;
+
+      .name {
+        font-weight: 300;
+        font-size: 0.8rem;
+      }
+      
+    }
+    .matricula{
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     margin : 10px 0;
+     .name{
+           font-weight: 300;
+           font-size: 0.8rem;
+     }
+    }
+    
+    .identidade{
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     margin : 10px 0;
+     .name{
+           font-weight: 300;
+           font-size: 0.8rem;
+     }
+    }
+  }
 }
-.main{
+
+.voltar{
+     margin-top: 20px;
+}
+
+.login{
      .top{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 0;
           .logo{
-
+               width : 30%;
           }
-
+          margin-bottom: 30px;
+          margin-top: 40px;
+          
      }
-     .mid{
-          .left{
-
-          }
-          .right{
-               
-          }
-
-     }
-     .bottom{
-
+     .form-container{
+          padding: 30px;
           background-color: $white;
           border-radius: 5px;
+
      }
 
 
-}
-
-.data{
 }

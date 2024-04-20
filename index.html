@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>UNOPAR</title>
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-     <!-- CSS -->
-     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-     <div class="container main">
-          <div class="row top">
-               
-               <div class="col-12 logo">
-                    logo
-                    
-               </div>
-          </div>
-          <div class="row mid">
-               <div class="col-6 left">
-                    <img src="assets/Renata.jpg
-                    " alt="Renata">
-               </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-               <div class="col-6 right">
-                    <img src="assets/qrTemp.png" alt="Renata">
-                
-               </div>
-          </div>
-          <div class="row bottom">
-               <div class="col-12">
-                    <p>Universidade Norte do Paraná</p>
-               </div>
+    <title>UNOPAR</title>
+  </head>
+  <body>
+    <div class="container login">
+      <div class="row top">
+         <img class = "logo" src="assets/logo-horizontal.png" alt="UNOPAR" />
 
-          </div>
-               
-          </div>
-
-     </div>
+      </div>
+      <div class="form-container">
      
-     
-</body>
+            <form action="card.html" method="get">
+           <div class="form-group">
+               <label for="email">E-mail</label>
+               <input
+                 type="email"
+                 class="form-control"
+                 id="email"
+                 name="email"
+                 aria-describedby="emailHelp"
+                 placeholder="Digite seu e-mail"
+                 value = "renata.medeiros@hotmail.com"
+               />
+               <label for="password">Senha</label>
+               <input
+                 type="password"
+                 class="form-control"
+                 id="password"
+                 name="password"
+                 placeholder="Digite sua senha" value="uhsdfg7632jh" />
+           </div>
+               <button type="submit" class="btn btn-primary">Entrar</button>
+               
+               </form>
+          
+      </div>
+    </div>
+  </body>
 </html>
