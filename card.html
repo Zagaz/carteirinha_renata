@@ -25,7 +25,10 @@
 
         <div class="validade">
           <div>
-            <h1>Dez. <span id="year"> 2024 </span></h1>
+            <h1>Dez. <span id="year">  </span></h1>
+            <script>
+              document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
           </div>
         </div>
       </div>
